@@ -1,0 +1,28 @@
+/* Container class for centering content and setting max-width */
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;   /* Centers the container */
+    padding: 0 15px;  /* Adds horizontal padding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px; /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 720px; /* Adjust for small screens */
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 100%; /* Full width on extra small screens */
+        padding: 0 10px; /* Adjust padding */
+    }
+}
