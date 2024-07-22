@@ -4,7 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 gulp.task('sass', function() {
-    return gulp.src('src/main.scss')  // Update to main.scss
+    return gulp.src('src/tplusplus.scss')  // Update to main.scss
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist'))
         .pipe(cleanCSS())
